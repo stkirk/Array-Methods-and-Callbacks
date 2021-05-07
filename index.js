@@ -9,15 +9,20 @@ Practice accessing data by console.log-ing the following pieces of data note, yo
 const finals2014 = fifaData.filter(
   (index) => index.Year === 2014 && index.Stage === "Final"
 );
+// console.log(finals2014);
 console.log(finals2014[0]["Home Team Name"]); // Home Team Name: "Germany"
 
 //(b) Away Team name for 2014 world cup final
+console.log(finals2014[0]["Away Team Name"]); //Argentina
 
 //(c) Home Team goals for 2014 world cup final
+console.log(finals2014[0]["Home Team Goals"]); //1
 
 //(d) Away Team goals for 2014 world cup final
+console.log(finals2014[0]["Away Team Goals"]); //0
 
 //(e) Winner of 2014 world cup final */
+console.log(finals2014[0]["Win conditions"]); //Germany wins after extra time
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use getFinals to do the following:
