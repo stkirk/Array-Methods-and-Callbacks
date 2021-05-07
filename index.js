@@ -32,9 +32,13 @@ Use getFinals to do the following:
 hint - you should be looking at the stage key inside of the objects
 */
 
-function getFinals(/* code here */) {
-  /* code here */
+function getFinals(data) {
+  const finalsArray = data.filter(function (item) {
+    return item.Stage === "Final";
+  });
+  return finalsArray;
 }
+// console.log(getFinals(fifaData));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use the higher-order function called getYears to do the following: 
